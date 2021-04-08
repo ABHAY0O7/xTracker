@@ -40,6 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:onClick="openAddExpenses"
         android:text="@string/add_expense"
         app:backgroundTint="#DF3C3C"
         app:cornerRadius="50dp"

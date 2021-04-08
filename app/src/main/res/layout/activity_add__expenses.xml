@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Add_Income">
+    tools:context=".Add_Expenses">
 
     <TextView
         android:id="@+id/expense_amount"
@@ -13,7 +13,7 @@
         android:text="@string/amount"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/expense_time"
+        app:layout_constraintStart_toStartOf="@+id/expense_category"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.123" />
 
@@ -25,18 +25,18 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/expense_amount" />
+        app:layout_constraintTop_toBottomOf="@+id/expense_category" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="212dp"
+        android:layout_marginBottom="192dp"
         android:text="@string/note"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintHorizontal_bias="0.176"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -48,7 +48,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/expense_time"
-        app:layout_constraintVertical_bias="0.509" />
+        app:layout_constraintVertical_bias="0.526" />
 
     <EditText
         android:id="@+id/expenseAmount"
@@ -58,7 +58,7 @@
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBaseline_toBaselineOf="@+id/expense_amount"
-        app:layout_constraintStart_toStartOf="@+id/expenseDate" />
+        app:layout_constraintStart_toStartOf="@+id/expenseCategory" />
 
     <EditText
         android:id="@+id/expenseDate"
@@ -100,5 +100,24 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/expenseNote" />
+
+    <TextView
+        android:id="@+id/expense_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/expense_time"
+        app:layout_constraintStart_toStartOf="@+id/expense_time"
+        app:layout_constraintTop_toBottomOf="@+id/expense_amount" />
+
+    <EditText
+        android:id="@+id/expenseCategory"
+        android:layout_width="207dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/expense_category"
+        app:layout_constraintStart_toStartOf="@+id/expenseDate" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
