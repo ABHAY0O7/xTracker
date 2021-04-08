@@ -19,4 +19,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Add_Income.class);
         startActivity(intent);
     }
+    public void openAddExpenses(View view){
+        Toast.makeText(this, "Opening Add Expenses", Toast.LENGTH_SHORT).show();
+        Intent intent1 = new Intent(this, Add_Expenses.class);
+        startActivity(intent1);
+    }
 }
