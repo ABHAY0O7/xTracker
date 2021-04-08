@@ -91,9 +91,10 @@
         app:layout_constraintStart_toEndOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_add_expense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="MainActivity"
         android:text="@string/submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
